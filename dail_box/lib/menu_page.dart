@@ -3,7 +3,6 @@ import 'package:dail_box/util/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class MenuScreen extends StatefulWidget {
   final List<MenuItem> mainMenu;

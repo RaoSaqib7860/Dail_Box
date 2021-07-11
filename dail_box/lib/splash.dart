@@ -19,50 +19,52 @@ class _SplashState extends State<Splash> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          Container(
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage('assets/images/splash.png'))),
-          ),
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            color: blueColor.withOpacity(0.8),
-          ),
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Image(
-                  image: AssetImage('assets/icons/logo.png'),
-                ),
-                SizedBox(
-                  height: 25,
-                ),
-                Text(
-                  'Jo bhi Jab bhi',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30,
-                      fontStyle: FontStyle.italic,
-                      wordSpacing: 5),
-                ),
-                Text(
-                  'Jahan bhi',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 25,
-                      fontStyle: FontStyle.italic,
-                      wordSpacing: 5),
-                )
-              ],
+    return SafeArea(
+          child: Scaffold(
+        body: Stack(
+          children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage('assets/images/splash.png'))),
             ),
-          )
-        ],
+            Container(
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+              color: blueColor.withOpacity(0.8),
+            ),
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image(
+                    image: AssetImage('assets/icons/logo.png'),
+                  ),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  Text(
+                    'Jo bhi Jab bhi',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontStyle: FontStyle.italic,
+                        wordSpacing: 5),
+                  ),
+                  Text(
+                    'Jahan bhi',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                        fontStyle: FontStyle.italic,
+                        wordSpacing: 5),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

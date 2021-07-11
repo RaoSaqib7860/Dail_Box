@@ -63,11 +63,6 @@ class _HomeState extends State<Home> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(5.0),
                 child: Container(
-                  // height: 100.0,
-                  margin: const EdgeInsets.only(bottom: 6.0),
-                  //Same as `blurRadius` i guess
-                  padding: const EdgeInsets.all(6.0),
-                  //Same as `blurRadius` i guess
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5.0),
                     color: Colors.grey[100],
@@ -94,7 +89,7 @@ class _HomeState extends State<Home> {
                         disabledBorder: InputBorder.none,
                         contentPadding: EdgeInsets.only(
                             left: 15, bottom: 11, top: 11, right: 15),
-                        hintStyle: TextStyle(color: greyColor, fontSize: 14),
+                        hintStyle: TextStyle(color: greyColor, fontSize: 12),
                         hintText: "Search service or industry"),
                   ),
                 ),

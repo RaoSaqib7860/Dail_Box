@@ -10,6 +10,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Zoom Drawer Demo',
       debugShowCheckedModeBanner: false,
+      defaultTransition: Transition.cupertino,
+      transitionDuration: Duration(milliseconds: 700),
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         accentColor: Colors.deepPurpleAccent,
